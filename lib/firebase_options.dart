@@ -23,15 +23,9 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -67,5 +61,25 @@ class DefaultFirebaseOptions {
     projectId: 'flutter6-300a0',
     databaseURL: 'https://flutter6-300a0-default-rtdb.firebaseio.com',
     storageBucket: 'flutter6-300a0.appspot.com',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyC51gx6JQJgV8O8gtuQuilHSAdcsx2nMVE',
+    appId: '1:316946216656:ios:220713700c75436e7e90d5',
+    messagingSenderId: '316946216656',
+    projectId: 'flutter6-300a0',
+    databaseURL: 'https://flutter6-300a0-default-rtdb.firebaseio.com',
+    storageBucket: 'flutter6-300a0.appspot.com',
+    iosBundleId: 'com.example.flutterApplication1',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyC51gx6JQJgV8O8gtuQuilHSAdcsx2nMVE',
+    appId: '1:316946216656:ios:95c7745f2149941a7e90d5',
+    messagingSenderId: '316946216656',
+    projectId: 'flutter6-300a0',
+    databaseURL: 'https://flutter6-300a0-default-rtdb.firebaseio.com',
+    storageBucket: 'flutter6-300a0.appspot.com',
+    iosBundleId: 'com.example.flutterApplication1.RunnerTests',
   );
 }
